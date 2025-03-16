@@ -25,8 +25,8 @@ export interface GanttFilters {
 
 const DEFAULT_SHOW_TASKS_WITHOUT_DATES = false
 
-const DEFAULT_DATEFROM_DAY_OFFSET = -15
-const DEFAULT_DATETO_DAY_OFFSET = +55
+const DEFAULT_DATEFROM_DAY_OFFSET = 0
+const DEFAULT_DATETO_DAY_OFFSET = +31
 
 const now = new Date()
 
