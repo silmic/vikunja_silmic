@@ -9,7 +9,7 @@ ENV CYPRESS_INSTALL_BINARY=0
 
 COPY frontend/ ./
 
-RUN npm install -g corepack && corepack enable && \
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && npm install -g corepack && corepack enable && \
       pnpm install && \
       pnpm run build
 
